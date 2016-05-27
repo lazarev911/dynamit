@@ -1,0 +1,135 @@
+.hotdog-list {
+	.section {
+		float: left;
+		position: relative;
+		overflow: hidden;
+		font-family: 'Open Sans Light', sans-serif;
+		color: $color-grey-dark;
+
+		@include respond-to(phones) {
+			width: 100%;
+			padding-bottom: 100%;
+		}
+
+
+		@include respond-to(tablets) {
+			width: 100%;
+			padding-bottom: 100%;
+		}
+
+
+		@include respond-to(computers) {
+			width: 50%;
+			padding-bottom: 40%;
+		}
+
+
+		.wrapper {
+			position: absolute;
+			display: flex;
+			vertical-align: middle;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+
+			img {
+				@include scale(1.3);
+				height: 100%;
+				width: 100%;
+			}
+
+			.content {
+				margin-bottom: 3.4em;
+
+				@media only screen and (min-width: 320px) and (max-width: 860px) {
+					padding: 0 3em;
+				}
+
+
+				@media only screen and (min-width: 861px) {
+					padding: 0 8.4em;
+				}
+
+
+				h2 {
+					font-size: 1.5rem;
+					letter-spacing: -0.05em;
+				}
+
+
+				p {
+					font-size: 1.125rem;
+					letter-spacing: -0.55px;
+				}
+
+
+				&.beef {
+
+					.item {
+						position: absolute;
+						margin-left: -2em;
+						margin-top: 1.5em;
+					}
+
+
+					p {
+						position: relative;
+						top: 0.5em;
+						left: 0.125em;
+					}
+
+				}
+
+
+				&.vegan {
+
+					.item {
+						position: absolute;
+						margin-left: -2em;
+						margin-top: 1.7em;
+					}
+
+
+					h2 {
+						position: relative;
+						top: 0.125em;
+						left: -0.25em;
+					}
+
+					p {
+						position: relative;
+						top: 0.55em;
+						left: -0.25em;
+					}
+				}
+
+
+				&.vegitarian {
+
+					.item {
+						position: absolute;
+						margin-left: -2em;
+						margin-top: 3.4em;
+					}
+
+
+					h2 {
+						position: relative;
+						letter-spacing: -0.002em;
+						top: 1.25em;
+					}
+
+
+					p {
+						position: relative;
+						top: 1.75em;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+}

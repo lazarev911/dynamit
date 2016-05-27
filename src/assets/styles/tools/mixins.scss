@@ -1,0 +1,32 @@
+@mixin box-shadow($shadows...) {
+	-moz-box-shadow: $shadows;
+	-webkit-box-shadow: $shadows;
+	box-shadow: $shadows;
+}
+
+@mixin scale($zoom) {
+	-webkit-transform:scale($zoom); /* Safari and Chrome */
+	-moz-transform:scale($zoom); /* Firefox */
+	-ms-transform:scale($zoom); /* IE 9 */
+	-o-transform:scale($zoom); /* Opera */
+	transform:scale($zoom);
+}
+
+
+@mixin respond-to($media) {
+	@if $media == phones {
+		@media only screen and (max-width: $small) {
+			@content;
+		}
+	}
+	@else if $media == tablets {
+		@media only screen and (min-width: $small + 1) and (max-width: $large - 1) {
+			@content;
+		}
+	}
+	@else if $media == computers {
+		@media only screen and (min-width: $large) {
+			@content;
+		}
+	}
+}

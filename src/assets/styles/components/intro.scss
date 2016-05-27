@@ -1,0 +1,38 @@
+.intro {
+	text-align: center;
+	background: $color-grey-light;
+
+	@include respond-to(phones) {
+		padding: 5em 1.25em 6em 1.25em;
+
+		h1 {
+			font-size: 2rem;
+		}
+	}
+
+	@include respond-to(tablets) {
+		padding: 6em 6em 8em 6em;
+
+		h1 {
+			font-size: 2.5rem;
+		}
+	}
+
+	@include respond-to(computers) {
+		padding: 7.25em 13.75em 10em 13.75em;
+
+		h1 {
+			font-size: 3rem;
+		}
+
+	}
+
+	h1 {
+		font-family: 'Open Sans Light', sans;
+		font-weight: 300;
+		margin: 0.25em 0;
+		margin-bottom: 1.5em;
+		line-height: 1.5em;
+		letter-spacing: -0.03em;
+	}
+}
