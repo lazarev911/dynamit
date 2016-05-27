@@ -7,13 +7,37 @@
 
 	<title>{{title}}</title>
 
-	<meta name="description" content="">
+	<meta name="description" content="{{description}}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Andrey Lazarev" />
+
+	<meta property="og:type" content="image/png" />
+	<meta property="og:url" content="http://{{url}}/" />
+	<meta property="og:image" content="http://{{url}}/assets/images/hotdog.png"/>
+	<meta property="og:title" content="{{title}}"/>
+	<meta property="og:description" content="{{description}}" />
+	<meta property="og:site_name" content="{{url}}" />
 
 	<link rel="stylesheet" href="{{baseurl}}/assets/styles/main.css">
 
+	<link rel='icon' type='image/x-icon' href='{{img}}favicon.ico'/>
+	<link rel='shortcut icon' type='image/x-icon' href='{{img}}favicon.ico'/>
+	<link rel="icon" type="image/png" href="{{img}}favicon-196x196.png" sizes="196x196">
+	<link rel="icon" type="image/png" href="{{img}}favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="{{img}}favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="{{img}}favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="{{img}}favicon-16x16.png" sizes="16x16">
+	<link rel="apple-touch-icon" href="{{img}}apple-touch-icon-152x152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="{{img}}apple-touch-icon-144x144.png" sizes="144x144">
+	<link rel="apple-touch-icon" href="{{img}}apple-touch-icon-120x120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="{{img}}apple-touch-icon-114x114.png" sizes="114x114">
+	<link rel="apple-touch-icon" href="{{img}}apple-touch-icon-76x76.png" sizes="76x76">
+	<link rel="apple-touch-icon" href="{{img}}apple-touch-icon-72x72.png" sizes="72x72">
+	<link rel="apple-touch-icon" href="{{img}}apple-touch-icon-60x60.png" sizes="60x60">
+	<link rel="apple-touch-icon" href="{{img}}apple-touch-icon-57x57.png" sizes="57x57">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 </head>
-<body>
+<body class="vcard" itemscope itemtype="https://schema.org/LocalBusiness">
 
 	{{> header}}
 

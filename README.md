@@ -1,6 +1,9 @@
 # Hotdog
 
 > Add responsive design
+
+> Add favicons and microdata
+
 > Tested in Chrome
 
 ## Usage
